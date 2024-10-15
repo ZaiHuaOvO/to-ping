@@ -10,3 +10,7 @@
     background-color: white;
     height: 20vh;
 }
+
+.ant-layout-content {
+    padding: 5vh 20vw 5vh 20vw;
+}
