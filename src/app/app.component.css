@@ -1,0 +1,12 @@
+.title {}
+
+.ant-layout {
+    background-color: white;
+}
+
+.ant-layout-header {
+    width: 100%;
+    padding: 5vh 20vw 5vh 20vw;
+    background-color: white;
+    height: 20vh;
+}
