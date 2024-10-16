@@ -12,6 +12,7 @@ body {
     font-weight: 600;
     padding: 0;
     margin-left: -2em;
+
 }
 
 .nav * {
@@ -57,7 +58,7 @@ body {
     content: '';
     left: 0;
     bottom: 0;
-    font-weight: 1000;
+    /* font-weight: 1000; */
     border-bottom: 3px solid black;
     border-left: 3px solid black;
     transform: translate(100%, -50%)
