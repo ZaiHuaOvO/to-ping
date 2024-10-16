@@ -1,8 +1,26 @@
-<div class="main" @QuickUp>
+<!-- <div class="main" @QuickUp>
   <img class="logo" src="assets/img/首页.png" />
 
 </div>
 
 <div class="text" @SlowUp>
   <span nz-typography nzType="secondary">{{ text }}</span>
+</div> -->
+
+<nz-carousel nzAutoPlay nzEffect="fade" @QuickUp>
+  @for (index of array; track index) {
+  <div class="nz-carousel-content" nz-carousel-content>
+    <img class="home-img" nz-image [nzSrc]="index.url">
+  </div>
+  }
+</nz-carousel>
+
+<div class="cta-box" @SlowUp>
+  <a href="#" [routerLink]="['/work']" class="cta">
+    <span>MORE</span>
+    <svg width="13px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+  </a>
 </div>

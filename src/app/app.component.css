@@ -4,20 +4,36 @@
     background-color: white;
 }
 
+.ant-layout::-webkit-scrollbar {
+    display: none;
+}
+
 .ant-layout-header {
     width: 100%;
-    padding: 50px 20vw 50px 20vw;
-    background-color: white;
-    min-height: 200px;
-    max-height: 250px;
+    /* padding: 50px 20vw 50px 20vw; */
+    background-color: #6A9C89;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: auto;
+    height: 70px;
+    /* min-height: 200px;
+    max-height: 250px; */
 }
 
 .ant-layout-content {
-    padding: 50px 20vw 50px 20vw;
-    min-height: 1000px;
+    margin-top: 70px;
+    padding: 5vh 5vw 5vh 5vw;
+    /* min-height: 90vh; */
+    /* background-color: black; */
+    /* overflow: scroll; */
 }
 
-.name {
+.ant-layout-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* .name {
     min-height: 50px;
     max-height: 50px;
 }
@@ -26,7 +42,7 @@
     margin-top: 25px;
     min-height: 70px;
     max-height: 70px;
-}
+} */
 
 .nav {
     font-family: 'Titillium Web';
@@ -36,7 +52,6 @@
     padding: 0;
     /* margin-left: -2em; */
     margin: 0;
-    height: 48px;
 }
 
 .nav * {
@@ -47,19 +62,16 @@
 .nav li {
     display: inline-block;
     list-style: outside none none;
-    /* margin: .5em 1em; */
-    margin: 5px;
+    /* margin: .5em; */
     padding: 0;
-    line-height: 1;
 }
 
 .nav a {
-    padding: 16px 24px;
-    color: black;
+    padding: .5em .8em;
+    color: #E9EFEC;
     position: relative;
     text-decoration: none;
     font-size: 20px;
-    /* height: 48px; */
 }
 
 .nav a::before,
@@ -76,8 +88,8 @@
     content: '';
     right: 0;
     top: 0;
-    border-top: 3px solid black;
-    border-right: 3px solid black;
+    border-top: 3px solid #E9EFEC;
+    border-right: 3px solid #E9EFEC;
     transform: translate(-100%, 50%);
 }
 
@@ -86,8 +98,8 @@
     left: 0;
     bottom: 0;
     /* font-weight: 1000; */
-    border-bottom: 3px solid black;
-    border-left: 3px solid black;
+    border-bottom: 3px solid #E9EFEC;
+    border-left: 3px solid #E9EFEC;
     transform: translate(100%, -50%)
 }
 
@@ -98,5 +110,5 @@
 }
 
 .nav a:hover {
-    color: black;
+    color: #E9EFEC;
 }

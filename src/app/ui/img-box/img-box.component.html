@@ -8,7 +8,11 @@
           <span class="info">{{ item.info }}</span>
         </div>
       </a>
-
     </ng-container>
   </nz-image-group>
 </div>
+<nz-back-top [nzTemplate]="tpl" [nzVisibilityHeight]="100">
+  <ng-template #tpl>
+    <span style="color: #6A9C89;" nz-icon nzType="rocket" nzTheme="outline" style="font-size: 24px;"></span>
+  </ng-template>
+</nz-back-top>

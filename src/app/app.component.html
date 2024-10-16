@@ -1,15 +1,18 @@
 <nz-layout>
   <nz-header>
-    <div class="title">
-      <div class="name">
-        <h1 nz-typography>汤米大人</h1>
+    <div class="title" nz-flex nzJustify="space-between" nzAlign="center" nzGap="middle">
+      <div class="name" nz-flex nzAlign="center" nzGap="middle">
+        <nz-avatar [nzSize]="48" nzIcon="user"></nz-avatar>
+        <h1 nz-typography class="kuaile_text" style="color: #E9EFEC;">汤饭大人</h1>
       </div>
-      <div class="slider">
-        <app-header></app-header>
-      </div>
+      <ul class="nav" nz-flex nzjustify="center" nzAlign="start" nzGap="large">
+        <li><a href="#" [routerLink]="['/home']">首页</a></li>
+        <li><a href="#" [routerLink]="['/work']">作品</a></li>
+        <li><a href="#" [routerLink]="['/contact']">联系我</a></li>
+      </ul>
     </div>
   </nz-header>
-  <nz-divider style="padding: 0 !important; margin: 1vh !important;"></nz-divider>
+  <!-- <nz-divider style="padding: 0 !important; margin: 1vh !important;"></nz-divider> -->
   <nz-content>
     <router-outlet></router-outlet>
   </nz-content>

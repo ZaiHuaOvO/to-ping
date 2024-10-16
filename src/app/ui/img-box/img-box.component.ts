@@ -3,12 +3,13 @@ import { imgData } from '../../data/img.data';
 import { CommonModule } from '@angular/common';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { NzImageModule, NzImageService } from 'ng-zorro-antd/image';
+import { NzBackTopModule } from 'ng-zorro-antd/back-top';
 @Component({
   selector: 'app-img-box',
   templateUrl: './img-box.component.html',
   styleUrls: ['./img-box.component.css'],
   standalone: true,
-  imports: [CommonModule, NzImageModule],
+  imports: [CommonModule, NzImageModule, NzBackTopModule],
   animations: [
     trigger('fadeInUp', [
       transition(
