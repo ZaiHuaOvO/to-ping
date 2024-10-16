@@ -1,0 +1,18 @@
+.main {
+    width: 100%;
+    padding: 3vh 0 3vh 0;
+    background-color: white;
+    height: 50vh;
+}
+
+.text {
+    width: 100%;
+    padding: 10vh 0 3vh 0;
+    background-color: white;
+    height: 50vh;
+}
+
+.img {
+    vertical-align: bottom;
+    /* max-height: 100%; */
+}

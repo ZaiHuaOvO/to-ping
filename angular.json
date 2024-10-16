@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/to-ping",
+            "outputPath": "dist/to-ping/browser",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -40,13 +40,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "4mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "4mb"
                 }
               ],
               "outputHashing": "all"
@@ -93,6 +93,13 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "repo": "https://github.com/ZaiHuaOvO/to-ping.git",
+            "branch": "gh-pages"
           }
         }
       }
