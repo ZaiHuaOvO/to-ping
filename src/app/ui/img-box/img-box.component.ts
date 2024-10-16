@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { imgData } from '../../data/img.data';
 import { CommonModule } from '@angular/common';
 import { animate, style, transition, trigger } from '@angular/animations';
-
+import { NzImageModule, NzImageService } from 'ng-zorro-antd/image';
 @Component({
   selector: 'app-img-box',
   templateUrl: './img-box.component.html',
   styleUrls: ['./img-box.component.css'],
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NzImageModule],
   animations: [
     trigger('fadeInUp', [
       transition(
@@ -27,7 +27,21 @@ import { animate, style, transition, trigger } from '@angular/animations';
 })
 export class ImgBoxComponent implements OnInit {
   imgData = imgData;
-  constructor() {}
+  constructor(private nzImageService: NzImageService) {}
 
   ngOnInit() {}
+
+  // img(i: any): void {
+  //   const images = [
+  //     {
+  //       src: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+  //       alt: '',
+  //     },
+  //   ];
+  //   this.nzImageService.preview(images, {
+  //     nzZoom: 1,
+  //     nzRotate: 0,
+  //     nzScaleStep: this.scaleStep,
+  //   });
+  // }
 }
