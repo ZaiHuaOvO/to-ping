@@ -1,0 +1,52 @@
+<!-- <div class="tiles">
+  <a class="tile" href="#">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/1.jpg" alt="Tile Image">
+    <div class="details">
+      <span class="title">Lorem Ipsum Dolor</span>
+      <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
+    </div>
+  </a>
+  <a class="tile" href="#">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/2.jpg" alt="Tile Image">
+    <div class="details">
+      <span class="title">Lorem Ipsum Dolor</span>
+      <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
+    </div>
+  </a>
+  <a class="tile" href="#">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/3.jpg" alt="Tile Image">
+    <div class="details">
+      <span class="title">Lorem Ipsum Dolor</span>
+      <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
+    </div>
+  </a>
+  <a class="tile" href="#">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/4.jpg" alt="Tile Image">
+    <div class="details">
+      <span class="title">Lorem Ipsum Dolor</span>
+      <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
+    </div>
+  </a>
+</div> -->
+<div class="img" nz-flex nzWrap="wrap" nzJustify="center" nzAlign="center" nzGap=" large" nzDisablePreview="false">
+  <ng-container *ngFor="let item of imgData; let i = index">
+    <a class="tile" [@fadeInUp]="{ value: '', params: { timing: 200 + i * 100 } }">
+      <img [src]="item.url">
+      <div class="details">
+        <span class="title">{{ item.title }}</span>
+        <span class="info">{{ item.info }}</span>
+      </div>
+    </a>
+  </ng-container>
+</div>
+
+
+<!-- <div class="tiles">
+  <a class="tile" *ngFor="let item of imgData" href="#">
+    <img [src]="item.url" alt="Tile Image">
+    <div class="details">
+      <span class="title">{{ item.title }}</span>
+      <span class="info">{{ item.info }}</span>
+    </div>
+  </a>
+</div> -->
